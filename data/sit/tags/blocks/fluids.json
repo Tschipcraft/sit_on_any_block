@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"water",
+    "lava",
+    "barrier",
+    "end_portal",
+    "cobweb"
+	]
+}

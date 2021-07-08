@@ -1,5 +1,6 @@
 {
   "values": [
-    "sit:install"
+    "sit:install_trigger",
+    "sit:version_checker"
   ]
 }

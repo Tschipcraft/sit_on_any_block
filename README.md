@@ -15,7 +15,7 @@ Partially Multiplayer compatible!
 
 ## Installation
 
-Download the latest release from [here][latest] and put the datapack zip file into the `datapacks` folder of your Minecraft world.
+Download the latest release from [here](https://github.com/Tschipcraft/sit_on_any_block/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
 
 
 ## Updates

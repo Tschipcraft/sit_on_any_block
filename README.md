@@ -20,4 +20,4 @@ Download the latest release from [here](https://github.com/Tschipcraft/sit_on_an
 
 ## Updates
 
-To check for updates use `/trigger menu` and hit the Check for Updates button. There is also a Reset and an Uninstall button.
+To check for updates use `/trigger menu` and hit the Check for Updates button. There is also a **Reset** and an **Uninstall** button.

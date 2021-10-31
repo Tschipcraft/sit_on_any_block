@@ -1,36 +1,42 @@
 ## by Tschipcraft
 
-
+# Detection
 execute as @a[gamemode=!spectator] at @s run function sit:general/core
 
-## Spawn entities
+
+## Stairs
+
+# Initalise
 scoreboard players add @e[type=#sit:sit_work,tag=chair] sit_timer 1
 
 execute as @e[type=armor_stand,tag=chair,scores={sit_timer=2}] at @s run tp @s ~ ~2.0 ~
 
 
-## Kill entities
-execute as @e[type=#sit:sit_work,scores={sit_destroy=5..}] run kill @s
-scoreboard players add @e[type=#sit:sit_work,scores={sit_destroy=1..}] sit_destroy 1
-
-execute as @e[type=minecraft:horse,tag=chair,scores={sit_timer=3..}] at @s if block ~ ~1 ~ #sit:nonsolid run function sit:general/destroy
-execute as @e[type=minecraft:horse,tag=chair,scores={sit_timer=3..}] at @s unless entity @a[gamemode=!spectator,distance=..4] run function sit:general/destroy
+# Kill entities
+execute as @e[type=minecraft:armor_stand,tag=chair,scores={sit_timer=3..}] at @s if block ~ ~2.62 ~ #sit:nonsolid run kill @s
+execute as @e[type=minecraft:armor_stand,tag=chair,scores={sit_timer=3..}] at @s unless entity @a[gamemode=!spectator,distance=..4] run kill @s
 
 
-execute as @a[nbt={SelectedItem:{id:"minecraft:wooden_axe",Count:1b}}] at @s as @e[tag=chair,distance=..5] run function sit:general/destroy
-execute as @a[nbt={SelectedItem:{id:"minecraft:iron_axe",Count:1b}}] at @s as @e[tag=chair,distance=..5] run function sit:general/destroy
-execute as @a[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}}] at @s as @e[tag=chair,distance=..5] run function sit:general/destroy
-execute as @a[nbt={SelectedItem:{id:"minecraft:diamond_axe",Count:1b}}] at @s as @e[tag=chair,distance=..5] run function sit:general/destroy
-execute as @a[nbt={SelectedItem:{id:"minecraft:stone_axe",Count:1b}}] at @s as @e[tag=chair,distance=..5] run function sit:general/destroy
+execute as @a[nbt={SelectedItem:{id:"minecraft:wooden_axe",Count:1b}}] at @s as @e[type=minecraft:armor_stand,tag=chair,distance=..5] run function sit:general/destroy
+execute as @a[nbt={SelectedItem:{id:"minecraft:iron_axe",Count:1b}}] at @s as @e[type=minecraft:armor_stand,tag=chair,distance=..5] run function sit:general/destroy
+execute as @a[nbt={SelectedItem:{id:"minecraft:golden_axe",Count:1b}}] at @s as @e[type=minecraft:armor_stand,tag=chair,distance=..5] run function sit:general/destroy
+execute as @a[nbt={SelectedItem:{id:"minecraft:diamond_axe",Count:1b}}] at @s as @e[type=minecraft:armor_stand,tag=chair,distance=..5] run function sit:general/destroy
+execute as @a[nbt={SelectedItem:{id:"minecraft:stone_axe",Count:1b}}] at @s as @e[type=minecraft:armor_stand,tag=chair,distance=..5] run function sit:general/destroy
 
-execute as @e[type=minecraft:armor_stand,tag=chair,scores={sit_timer=3..}] at @s positioned ~ ~1.65 ~ unless entity @e[type=horse,tag=chair,distance=..0.1] run kill @s
 
 ## Clear Items
 
 execute as @e[type=minecraft:area_effect_cloud,tag=clearItems] at @s run kill @e[type=minecraft:experience_orb,distance=..2]
 
 
-## New sitOnGround
+
+# Cleanup
+execute as @e[type=#sit:sit_work,scores={sit_destroy=3..}] run kill @s[type=!minecraft:player]
+scoreboard players add @e[type=#sit:sit_work,scores={sit_destroy=1..}] sit_destroy 1
+execute as @e[type=horse,tag=sit,scores={sit_timer=5..}] unless entity @s[scores={sit_destroy=1..}] at @s positioned ~ ~-2 ~ unless entity @e[type=armor_stand,tag=sit,distance=..1] at @s run function sit:general/destroy
+
+
+## Any Block
 
 effect give @e[type=#sit:sit_work,tag=sitonGround] minecraft:resistance 10 126 true
 effect give @e[type=#sit:sit_work,tag=sitonGround] minecraft:regeneration 1 255 true
@@ -40,18 +46,21 @@ team join NoCollision @e[type=#sit:sit_work,tag=sitonGround]
 scoreboard players add @e[type=#sit:sit_work,tag=sitonGround] sit_timer 1
 
 
+# Cleanup horse
+execute as @e[type=horse,tag=sitonGround,scores={sit_timer=5..}] unless entity @s[scores={sit_destroy=1..}] at @s positioned ~ ~-2 ~ unless entity @e[type=armor_stand,tag=sitonGround,distance=..1] run function sit:general/destroy
 
-
+# Initalise
 execute as @e[type=horse,tag=sitonGround,scores={sit_timer=1}] at @s rotated as @p run tp @s ~ ~ ~ ~ ~
 execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=2}] at @s run tp @s ~ ~2.5 ~
-#execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=2}] at @s run tp @s ~ ~4.5 ~
 
 
-execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=5..}] at @s positioned ~ ~2 ~ unless entity @a[scores={sit_emptyHand=1},x_rotation=80..90,distance=..1.5] unless entity @a[nbt={RootVehicle:{Entity:{Tags:[sitonGround]}}},distance=..0.5] unless entity @e[tag=sitcheck,distance=..1] positioned ~ ~2 ~ unless entity @a[scores={sit_emptyHand=1},x_rotation=80..90,distance=..1.5] positioned ~ ~2 ~ unless entity @a[scores={sit_emptyHand=1},x_rotation=80..90,distance=..1.5] run kill @s
-execute as @e[type=horse,tag=sitonGround,scores={sit_timer=5..}] at @s positioned ~ ~-2 ~ unless entity @e[type=armor_stand,tag=sitonGround,distance=..1] run function sit:general/destroy
+# Cleanup if no player around
+execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=5..}] at @s positioned ~ ~2.471 ~ unless entity @a[nbt={RootVehicle:{Entity:{Tags:[sitonGround]}}},distance=..0.5] positioned ~ ~1 ~ unless entity @a[scores={sit_emptyHand=1},x_rotation=80..90,distance=..1.5] unless entity @e[tag=sitcheck,distance=..1] positioned ~ ~1 ~ unless entity @a[scores={sit_emptyHand=1},x_rotation=80..90,distance=..1.5] positioned ~ ~1 ~ unless entity @a[scores={sit_emptyHand=1},x_rotation=80..90,distance=..1.5] run kill @s
 
-execute as @e[type=horse,tag=sitonGround] at @s rotated as @a[nbt={RootVehicle:{Entity:{Tags:[sitonGround]}}},sort=nearest,limit=1] run tp @s ~ ~ ~ ~ ~
+# Refresh rotation
+execute as @e[type=horse,tag=sitonGround] at @s positioned ~ ~0.85 ~ rotated as @a[nbt={RootVehicle:{Entity:{Tags:[sitonGround]}}},sort=nearest,limit=1] positioned ~ ~-0.85 ~ run tp @s ~ ~ ~ ~ ~
 
+# Custom heights
 execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=3..}] at @s align xyz positioned ~0.5 ~ ~0.5 if block ~ ~2.9 ~ #sit:nonsolid run tp @s ~ ~-1 ~
 execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ #slabs[type=bottom] run tp @s ~ ~-0.5 ~
 execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ stonecutter run tp @s ~ ~-0.5 ~
@@ -63,7 +72,7 @@ execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2.9 ~ cobweb r
 execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=3..}] at @s align xyz positioned ~0.5 ~ ~0.5 if block ~ ~2.9 ~ #sit:nonsolid if block ~ ~1.9 ~ #sit:nonsolid run kill @s
 
 
-## Effects for players and entities
+## General
 
 effect give @e[type=horse,tag=Invisible] minecraft:invisibility 1 1 true
 
@@ -72,11 +81,15 @@ effect give @e[type=#sit:sit_work,tag=chair] minecraft:regeneration 1 255 true
 
 team join NoCollision @e[type=#sit:sit_work,tag=chair]
 
-effect give @a[nbt={RootVehicle:{Entity:{Tags:[sit]}}}] minecraft:levitation 1 0 true
+
+# Prevent player stuck in blocks after dismount
+scoreboard players set @a[nbt={RootVehicle:{Entity:{Tags:[sit]}}}] sit_player_c 2
+execute as @a[scores={sit_player_c=1}] at @s unless block ~ ~1 ~ #sit:nonsolid run tp @s ~ ~2 ~
+scoreboard players reset @a[scores={sit_player_c=1..}] sit_player_c
+scoreboard players set @a[nbt={RootVehicle:{Entity:{Tags:[sit]}}}] sit_player_c 1
 
 
-
-## welcome & Menu
+# welcome & Menu
 scoreboard players add @a sit_welcome 0
 execute as @a[scores={menu=1..60,sit_welcome=1}] run scoreboard players set @s sit_welcome 0
 execute as @a[scores={sit_welcome=0}] run function sit:messages/welcome

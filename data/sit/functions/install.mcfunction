@@ -3,8 +3,7 @@
 scoreboard objectives add sit_emptyHand dummy
 scoreboard objectives add sit_timer dummy
 scoreboard objectives add sit_destroy dummy
-
-##scoreboard objectives add speed dummy
+scoreboard objectives add sit_player_c dummy
 
 scoreboard objectives add menu trigger
 scoreboard objectives add sit_welcome trigger

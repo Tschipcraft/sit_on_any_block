@@ -5,8 +5,8 @@ function sit:reset
 scoreboard objectives remove sit_emptyHand
 scoreboard objectives remove sit_timer
 scoreboard objectives remove sit_destroy
+scoreboard objectives remove sit_player_c
 
-##scoreboard objectives remove speed
 scoreboard objectives remove sit_pause
 scoreboard objectives remove sit_welcome
 scoreboard objectives remove sit_how_to_use

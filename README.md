@@ -7,11 +7,10 @@
 This pack gives you the ability to sit on stairs and blocks and create benches/chairs
 
 To sit on a block, stand on it, put any items in your main hand away, look down and right-click.
-Stairs work kinda the same way, the only difference is, that you don't have to specifically look down to sit on them.
-These "chairs" will stay longer but will despawn after a few minutes. To get rid of a chair immediately, hold any type of axe in your main hand or break the stair.
+Stairs work the same way, the only difference is that you don't have to specifically look down to sit on them.
+These "chairs" will stay longer but will despawn if no players are around. To get rid of a chair immediately, hold any type of axe in your main hand or break the stair.
 
-Not Multiplayer compatible! (Working on it...)
-
+Hopefully Multiplayer compatible
 
 ## Installation
 

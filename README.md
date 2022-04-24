@@ -16,7 +16,7 @@ Hopefully Multiplayer compatible
 
 Download the latest release from [here](https://github.com/Tschipcraft/sit_on_any_block/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
 
-For Minecraft 1.14 use [this legacy version](https://drive.google.com/drive/folders/1GqGxqIZPX9-C_T55kG3sQ7KlAjy4vfej?usp=sharing)
+The other editions are not yet available
 
 ## Updates
 

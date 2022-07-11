@@ -21,3 +21,7 @@ For Minecraft 1.14x - 1.18x use [these legacy editions](https://github.com/Tschi
 ## Updates
 
 To check for updates use `/trigger menu` and hit the Check for Updates button. There is also a **Reset** and an **Uninstall** button.
+
+## Compatibility
+
+Data packs are usually pretty compatible with newer versions of the game. This data pack however also features a version checker which notifies you, if you are playing with an (to the data pack) unknown version. If the data pack works fine and I'm just too lazy to update the pack in time, you can turn it off with the command `/scoreboard players set tvc_ignore global 1`

@@ -13,6 +13,8 @@ scoreboard objectives remove sit_how_to_use
 scoreboard objectives remove menu
 team remove NoCollision
 
+scoreboard objectives remove tvc_ignore
+
 ## From older versions
 scoreboard objectives remove emptyHand
 scoreboard objectives remove Timer

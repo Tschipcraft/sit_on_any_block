@@ -11,5 +11,7 @@ scoreboard objectives add sit_how_to_use trigger
 
 scoreboard objectives add sit_pause minecraft.custom:minecraft.sneak_time
 
+scoreboard objectives add tvc_ignore dummy
+
 team add NoCollision
 team modify NoCollision collisionRule never

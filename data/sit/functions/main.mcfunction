@@ -60,25 +60,12 @@ execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=5..}] at @s pos
 # Refresh rotation
 execute as @e[type=horse,tag=sitonGround] at @s positioned ~ ~0.85 ~ rotated as @a[nbt={RootVehicle:{Entity:{Tags:[sitonGround]}}},sort=nearest,limit=1] positioned ~ ~-0.85 ~ run tp @s ~ ~ ~ ~ ~
 
-# Custom heights
-execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=3..}] at @s align xyz positioned ~0.5 ~ ~0.5 if block ~ ~2.9 ~ #sit:nonsolid run tp @s ~ ~-1 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ #slabs[type=bottom] run tp @s ~ ~-0.5 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ stonecutter run tp @s ~ ~-0.5 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ #sit:head run tp @s ~ ~-0.55 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ #sit:wall_head run tp @s ~ ~-0.3 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ #beds run tp @s ~ ~-0.5 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ cake run tp @s ~ ~-0.5 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ #minecraft:fence_gates[open=true] run tp @s ~ ~-1.0 ~
+# Y Coordinate handling
+execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=3..}] at @s align xz positioned ~0.5 ~ ~0.5 if block ~ ~2.9 ~ #sit:nonsolid run tp @s ~ ~-0.5 ~
 
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ minecraft:sculk_sensor run tp @s ~ ~-0.5 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ minecraft:big_dripleaf[tilt=full] run tp @s ~ ~-1.0 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ minecraft:large_amethyst_bud run tp @s ~ ~-0.5 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ minecraft:amethyst_cluster run tp @s ~ ~-0.2 ~
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2 ~ minecraft:pointed_dripstone[thickness=tip] run tp @s ~ ~-0.4 ~
+execute as @e[tag=sitonGround,type=armor_stand] at @s run function sit:general/custom_height
 
-execute as @e[type=armor_stand,tag=sitonGround] at @s if block ~ ~2.9 ~ cobweb run tp @s ~ ~-0.1 ~
-##execute as @e[tag=sitonGround,type=armor_stand] at @s if block ~ ~2 ~ #sit:nonsolid run tp @s ~ ~-1 ~
-execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=3..}] at @s align xyz positioned ~0.5 ~ ~0.5 if block ~ ~2.9 ~ #sit:nonsolid if block ~ ~1.9 ~ #sit:nonsolid run kill @s
+execute as @e[type=armor_stand,tag=sitonGround,scores={sit_timer=3..}] at @s align xz positioned ~0.5 ~ ~0.5 if block ~ ~2.9 ~ #sit:nonsolid if block ~ ~1.9 ~ #sit:nonsolid run kill @s
 
 
 ## General

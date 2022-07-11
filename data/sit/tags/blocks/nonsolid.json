@@ -52,7 +52,7 @@
 		"#minecraft:trapdoors",
 		"#minecraft:doors",
 		"#minecraft:signs",
-		"#minecraft:carpets",
+		"#minecraft:wool_carpets",
 		"#minecraft:portals",
 		"minecraft:sugar_cane",
 		"minecraft:composter",
@@ -71,6 +71,7 @@
 		"minecraft:moss_carpet",
 		"#minecraft:candles",
 		"minecraft:small_amethyst_bud",
-		"minecraft:medium_amethyst_bud"
+		"minecraft:medium_amethyst_bud",
+		"minecraft:sculk_vein"
 	]
 }

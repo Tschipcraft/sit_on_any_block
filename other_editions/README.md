@@ -4,7 +4,7 @@
 
 ## Download
 
-[Minecraft 1.17-1.18x](https://github.com/Tschipcraft/sit_on_any_block/raw/master/other_editions/sit_on_any_block-v1.2-mc1.16-datapack.zip)
+[Minecraft 1.17-1.18x](https://github.com/Tschipcraft/sit_on_any_block/raw/master/other_editions/sit_on_any_block-v1.2-mc1.17-1.18-datapack.zip)
 
 [Minecraft 1.16x](https://github.com/Tschipcraft/sit_on_any_block/raw/master/other_editions/sit_on_any_block-v1.2-mc1.16-datapack.zip)
 

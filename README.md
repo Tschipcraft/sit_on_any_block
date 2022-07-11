@@ -1,6 +1,6 @@
 # Sit on any block
 
-> A data pack for 1.14x-1.18x
+> A data pack for 1.14x-1.19x
 
 ## Features
 
@@ -16,7 +16,7 @@ Hopefully Multiplayer compatible
 
 Download the latest release from [here](https://github.com/Tschipcraft/sit_on_any_block/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
 
-For Minecraft 1.14x - 1.16x use [these legacy versions](https://github.com/Tschipcraft/sit_on_any_block/tree/master/other_editions)
+For Minecraft 1.14x - 1.18x use [these legacy editions](https://github.com/Tschipcraft/sit_on_any_block/tree/master/other_editions)
 
 ## Updates
 

@@ -57,13 +57,6 @@
 		"minecraft:sugar_cane",
 		"minecraft:composter",
 		"#minecraft:climbable",
-		"minecraft:big_dripleaf_stem",
-		"minecraft:small_dripleaf",
-		"minecraft:glow_lichen",
-		"minecraft:moss_carpet",
-		"#minecraft:candles",
-		"minecraft:small_amethyst_bud",
-		"minecraft:medium_amethyst_bud",
 		"minecraft:crimson_roots",
 		"minecraft:crimson_fungus",
 		"minecraft:warped_roots",
@@ -71,6 +64,13 @@
 		"minecraft:nether_sprouts",
 		"minecraft:soul_lantern",
 		"minecraft:soul_torch",
-		"#minecraft:campfires"
+		"#minecraft:campfires",
+		"minecraft:big_dripleaf_stem",
+		"minecraft:small_dripleaf",
+		"minecraft:glow_lichen",
+		"minecraft:moss_carpet",
+		"#minecraft:candles",
+		"minecraft:small_amethyst_bud",
+		"minecraft:medium_amethyst_bud"
 	]
 }

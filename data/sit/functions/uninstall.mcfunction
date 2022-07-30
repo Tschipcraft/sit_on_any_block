@@ -23,6 +23,6 @@ scoreboard objectives remove ydestc
 scoreboard objectives remove zdestc
 
 datapack disable "file/sitonanyblock.zip"
-datapack disable "file/sit_on_any_block-v1.2.1-mc1.19-datapack.zip"
+datapack disable "file/sit_on_any_block-v1.2.2-mc1.19-datapack.zip"
 
 say Data pack uninstalled by @s!

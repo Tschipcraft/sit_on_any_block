@@ -3,6 +3,7 @@
 	"values": [
 		"minecraft:air",
 		"minecraft:cave_air",
+		"minecraft:structure_void",
 		"minecraft:grass",
 		"#minecraft:saplings",
 		"minecraft:bamboo_sapling",
@@ -65,6 +66,7 @@
 		"minecraft:soul_lantern",
 		"minecraft:soul_torch",
 		"#minecraft:campfires",
+		"minecraft:light",
 		"minecraft:big_dripleaf_stem",
 		"minecraft:small_dripleaf",
 		"minecraft:glow_lichen",

@@ -11,19 +11,17 @@
 
 ## Features
 
-This pack gives you the ability to sit on stairs and blocks and create benches/chairs
+This pack gives you the ability to sit on stairs and blocks.
 
 To sit on a block, stand on it, put any items in your main hand away, look down and right-click.
 Stairs work the same way, the only difference is that you don't have to specifically look down to sit on them.
 These "chairs" will stay longer but will despawn if no players are around. To get rid of a chair immediately, hold any type of axe in your main hand or break the stair.
 
-Hopefully Multiplayer compatible.
-
 ## Installation
 
-Download the latest release from [here](https://github.com/Tschipcraft/sit_on_any_block/releases/latest) and put the datapack zip file into the `datapacks` folder of your Minecraft world.
+Download the latest release from [here](https://github.com/Tschipcraft/sit_on_any_block/releases/latest) and put the data pack .zip file into the `datapacks` folder of your Minecraft world.
 
-For Minecraft 1.14x - 1.18x use [these legacy editions](https://github.com/Tschipcraft/sit_on_any_block/tree/master/other_editions)
+For Minecraft 1.14x - 1.18x use [these legacy editions](https://github.com/Tschipcraft/sit_on_any_block/tree/master/other_editions).
 
 ## Updates
 

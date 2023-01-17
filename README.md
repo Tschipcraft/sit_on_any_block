@@ -4,7 +4,7 @@
 </h1>
 <p align="center">
   <a href="https://github.com/Tschipcraft/sit_on_any_block/stargazers"><img src="https://img.shields.io/github/stars/Tschipcraft/sit_on_any_block?colorA=010101&colorB=3a7124&style=for-the-badge"></a>
-  <a href="https://datapacks-pre-product.modrinth.com/datapack/sit_on_any_block"><img src="https://img.shields.io/modrinth/dt/sit-on-any-block?label=Modrinth&colorA=010101&colorB=3a7124&style=for-the-badge&logo=modrinth"></a>
+  <a href="https://modrinth.com/datapack/sit-on-any-block"><img src="https://img.shields.io/modrinth/dt/sit-on-any-block?label=Modrinth&colorA=010101&colorB=3a7124&style=for-the-badge&logo=modrinth"></a>
   <a href="https://github.com/Tschipcraft/sit_on_any_block/releases/latest"><img src="https://img.shields.io/github/downloads/Tschipcraft/sit_on_any_block/total?logo=github&colorA=010101&colorB=3a7124&style=for-the-badge"></a>
 </p>
 
@@ -26,7 +26,7 @@ For Minecraft 1.14x - 1.18x use [these legacy editions](https://github.com/Tschi
 
 Now also available on Modrinth!
 
-<a href="https://datapacks-pre-product.modrinth.com/datapack/sit_on_any_block">
+<a href="https://modrinth.com/datapack/sit-on-any-block">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/modrinth/art/blob/main/Branding/Badge/badge-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/modrinth/art/blob/main/Branding/Badge/badge-light.svg">
